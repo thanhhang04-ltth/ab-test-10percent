@@ -2,25 +2,110 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>10% 할인 실험 페이지</title>
-    <!--<!-- Start Wingify Async V3.0 SmartCode -->
-<link rel="preconnect" href="https://edge.wingify.net"/>
-<script type="text/javascript">
-window._wingify_code || (function() {        
-    var account_id = 1281823,
-        version = 3.0,
-        settings_tolerance = 2000,
-        hide_element = 'body',
-        hide_element_style =
-        'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important';
-    /* DO NOT EDIT BELOW THIS LINE */
-    var n=window,i=document;if(-1<i.URL.indexOf('__wingify_disable__')||n._wingify_code)return;var t=!1,r=i.currentScript,nonce=r&&r.nonce,e={sT:settings_tolerance,hES:hide_element_style,hE:hide_element};try{e=Object.assign(e,JSON.parse(localStorage.getItem('_wingify_'+account_id+'_config')))}catch(e){}var code={script:r,nonce:nonce,settings_tolerance:function(){return e.sT},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':e.hE},hide_element_style:function(){return'{'+e.hES+'}'},getVersion:function(){return version},finish:function(){var e;!t&&(t=!0,e=i.getElementById('_vis_opt_path_hides'))&&e.parentNode.removeChild(e)},finished:function(){return t},addScript:function(e){var t=i.createElement('script');t.src=e,nonce&&t.setAttribute('nonce',nonce),t.fetchPriority='high',i.head.appendChild(t)},init:function(){n._settings_timer=setTimeout(function(){code.finish()},this.settings_tolerance());var e,t=this.hide_element();t&&((e=i.createElement('style')).id='_vis_opt_path_hides',nonce&&e.setAttribute('nonce',nonce),e.textContent=t+this.hide_element_style(),i.head.appendChild(e)),this.addScript('https://edge.wingify.net/tag/'+account_id+'.js')}};n._wingify_code=code;code.init();})();
-</script> 
-<!--End Wingify Async SmartCode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10% 할인 이벤트</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .product {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            margin-top: 25px;
+        }
+
+        .original-price {
+            color: #888;
+            text-decoration: line-through;
+            font-size: 18px;
+        }
+
+        .sale-price {
+            color: #e53935;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .discount {
+            color: #e53935;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        #test-button {
+            background: #111;
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        #test-button:hover {
+            background: #444;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>특별 할인 이벤트</h1>
-    <p>지금 상품을 구매하시면 10% 할인 혜택을 받을 수 있습니다.</p>
-    <button id="test-button">10% 할인</button>
+
+    <div class="product">
+
+        <h1>특별 할인 이벤트</h1>
+
+        <img
+            class="product-image"
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700"
+            alt="프리미엄 운동화"
+        >
+
+        <h2>프리미엄 운동화</h2>
+
+        <p class="original-price">₩100,000</p>
+
+        <p class="sale-price">₩90,000</p>
+
+        <p class="discount">10% 할인</p>
+
+        <p class="description">
+            지금 구매하시면 특별 할인 혜택을 받을 수 있습니다.
+        </p>
+
+        <button id="test-button">
+            10% 할인
+        </button>
+
+    </div>
+
 </body>
 </html>
